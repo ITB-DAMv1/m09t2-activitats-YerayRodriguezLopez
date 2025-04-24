@@ -32,8 +32,13 @@ Assert(): comprova condicions en temps d’execució.
 4. 
 
 Característica       Thread                         Task
+
 Creació              Manual (new Thread)            Automàtica (Task.Run())
+
 Paral·lelisme        Natiu, un fil per instància    Utilitza thread pool
+
 Rendiment            Més costós                     Més eficient per IO-bound
+
 Cancel·lació         Difícil de gestionar           Amb CancellationToken
+
 Retorn de resultat   No retorna valors              Pot retornar valors
